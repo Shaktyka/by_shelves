@@ -11,7 +11,7 @@ html(lang='ru-RU')
         header.header
             .container
                 .header__wrapper
-                    // Логотип
+                    //- Логотип
                     a.header__logo-link
                         span.visually-hidden Логотип сайта "По полочкам"
                         .
@@ -62,7 +62,7 @@ html(lang='ru-RU')
                     p.header__address
                         |г. Санкт-Петербург, <br />
                         |наб. Pеки Карповки, 5 корпус П
-                    // Поиск и корзина
+                    //- Поиск и корзина
                     .user-header
                         .user-header__search
                             input.user-header__search-input(type="text" name="user-headerSearch" placeholder="Поиск по полке...")
@@ -105,7 +105,7 @@ html(lang='ru-RU')
                                         stroke-width="2"
                                     />
                                 </svg>
-            // Навигация
+            //- Навигация
             nav.nav
                 .container
                     .nav__content
@@ -125,7 +125,34 @@ html(lang='ru-RU')
                             li.user-nav__item
                                 a.user-nav__link(href="#")
                                     span.user-nav__text Вход
-        .content 
+        //- Контент
+        .content
+            main.index-page
+                h1.visually-hidden Магазин по продаже книг "По полочкам"
+                section.hero
+                section.new-books
+                section.best-books
+                section.reviews
+                section.about
+                    .container
+                        h2.about__title.section__title О нас 
+                        ul.about__list
+                            li.about__item
+                                .about__wrapper
+                                    h3.about__heading По полочкам — крупнейший книжный интернет магазин
+                                    p.about__text
+                                        |Мы предлагаем большой выбор книг, поддерживая длительные и дружелюбные партнёрские отношения с большинством
+                                        |издательств. Мы любим книги, ценим любовь к книгам наших покупателей, поэтому стараемся сделать всё возможное, чтобы
+                                        |каждая книга нашла своего читателя. Наши продавцы разделяют вашу любовь к чтению и всегда рады помочь.
+                            li.about__item
+                                .about__wrapper
+                                    h3.about__heading Почему покупать книги онлайн удобно?
+                                    p.about__text
+                                        |Что делать, если вам нужна особенная книга? Вдруг ее нет в наличии? Чтобы сэкномить время, загляните на наш сайт. Мы
+                                        |доставляем книги почтой, курьером, в пункты самовывоза или бесплатно в магазины сети. А еще у нас есть мобильное
+                                        |приложение, в котором удобно делать заказы. Вы можете добавить в него Карту Любимого Покупателя, чтобы копить бонусы и
+                                        |тратить их на покупки.
+        //- Футер
         footer.footer
             .container 
                 .footer__wrapper
