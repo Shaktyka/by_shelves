@@ -1,15 +1,13 @@
 extends layout/layout
-
+    
+//- Индекс
 block content
-    include modules/header
-    //- Контент
     .content
         main.index-page
             h1.visually-hidden Магазин по продаже книг "По полочкам"
             include modules/hero
-            include modules/new-books
-            include modules/best-books
-            include modules/reviews
-            include modules/about
-    include modules/footer
+            include modules/new-books/new-books
+            include modules/best-books/best-books
+            include modules/reviews/reviews
+            include modules/about/about
 
