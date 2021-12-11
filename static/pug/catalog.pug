@@ -2,13 +2,6 @@ extends layout/layout
 
 //- Каталог
 block content
-    .content
-        main.catalog-page
-            section.breadcrumbs
-                .container
-                    ul.breadcrumbs__list
-                        li.breadcrumbs__item
-                            a.breadcrumbs__link(href="index.html") Главная страница
-                        li.breadcrumbs__item
-                            span.breadcrumbs__text Каталог книг
-            include modules/catalog/catalog
+    main.catalog-page
+        include modules/breadcrumbs
+        include modules/catalog/catalog

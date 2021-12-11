@@ -2,9 +2,8 @@ extends layout/layout
 
 //- Контент страницы книги
 block content
-    .content 
-        main.book-page
-            include modules/book/breadcrumbs
-            include modules/book/book
-            include modules/book/book-reviews
-            include modules/recently-viewed/recently-viewed
+    main.book-page
+        include modules/breadcrumbs
+        include modules/book/book
+        include modules/reviews/critique
+        include modules/recently-viewed/recently-viewed
