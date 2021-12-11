@@ -1,20 +1,23 @@
+include hero-data
+
+- 
+    var slide1 = heroSlides[0];
+
 //- Промо-блок
 section.hero
     .container
         .hero__slider.slider
             ul.slider__list
                 li.slider__item
-                    h2.slider__title Бестселлер для самых умных и продвинутых
-                    p.slider__text
-                        |Книга научит вас писать, читать, говорить по-новому. Авторы на конкретных примерах показывают, что такое хорошо и что
-                        |такое плохо в информационных, рекламных, журналистских и публицистических текстах.
-                    a.slider__link(href="#") Подробнее
+                    h2.slider__title= slide1.title
+                    p.slider__text= slide1.text
+                    a.slider__link(href=`${slide1.link}`) Подробнее
                         img.slider__img(
-                            src=`${pathContentImg}hero-slider-1@1x.png`
-                            srcset=`${pathContentImg}hero-slider-1@2x.png 2x`
+                            src=`${pathContentImg}${slide1.img_1x}`
+                            srcset=`${pathContentImg}${slide1.img_2x} 2x`
                             width="400"
                             height="633"
-                            alt="Картинка книга Пиши, сокращай")
+                            alt=`${slide1.name}`)
             ul.slider__bullets
                 li.slider__bullet
                     button.slider__bullet-button.slider__bullet-button--active
