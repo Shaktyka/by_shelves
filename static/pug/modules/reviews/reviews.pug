@@ -1,5 +1,4 @@
 include reviews-data
-
 -
     var imgWidth = 80
     var imgHeight = 80
@@ -8,19 +7,4 @@ include reviews-data
 section.reviews
     .container 
         h2.reviews__title.section__title Отзывы
-        ul.reviews__list
-            each review in reviews 
-                li.reviews__item
-                    .reviews__wrapper
-                        .reviews__info
-                            .reviews__box-images
-                                img.reviews__img(
-                                    src=`${pathContentImg}${review.img}`
-                                    alt="Фото автора отзыва"
-                                    width=`${imgWidth}`
-                                    height=`${imgHeight}`
-                                )
-                            .reviews__box
-                                h3.reviews__name= review.author
-                                p.reviews__count Купил #{review.count} книг
-                        p.reviews__review= review.text
+        include reviews-layout
