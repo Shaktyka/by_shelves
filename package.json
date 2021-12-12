@@ -1,6 +1,7 @@
 {
   "name": "template-engine-source",
   "version": "1.0.0",
+  "license": "common",
   "description": "",
   "scripts": {
     "start": "concurrently \"yarn run sync\" \"yarn run pug\"",

@@ -1,4 +1,9 @@
-//- include catalog-books-data
+include catalog-books-data
+
+- 
+    var imgWidth = 221
+    var imgHeight = 221
+    var book1 = books[0];
 
 .catalog-books
     .catalog-books__sort
@@ -12,15 +17,15 @@
         li.books__item
             .books__inner
                 img.books__img(
-                    src=`${pathContentImg}book-iron-king.jpg`
-                    alt='Фото книги - "Железный король"'
-                    width="221"
-                    height="221"
+                    src=`${pathContentImg}${book1.img}`
+                    alt='Фото книги - `${book1.name}}`'
+                    width=`${imgWidth}`
+                    height=`${imgWidth}`
                 )
                 .books__box
-                    p.books__author Кагава Д.
-                    h3.books__name Железный король
-                    p.books__description Меган удалось победить Железного короля, и теперь она во Дворце
+                    p.books__author= book1.author
+                    h3.books__name= book1.name
+                    p.books__description= book1.description
                     p.books__stars
                         . 
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,18 +35,18 @@
                                     stroke="white"
                                 />
                             </svg>
-                        span.books__star 3.8
+                        span.books__star= book1.raying
                     .books__wrapper
-                        a.books__link(href="iron-king.html") Подробнее
-                        span.books__pages 416 страниц
+                        a.books__link(href=`${book1.link}`) Подробнее
+                        span.books__pages #{book1.pages} страниц
         //- 2
         li.books__item
             .books__inner
                 img.books__img(
                     src=`${pathContentImg}book-fox-hole.jpg`
                     alt='Фото книги - "Лисья нора"'
-                    width="221"
-                    height="221"
+                    width=`${imgWidth}`
+                    height=`${imgWidth}`
                 )
                 .books__box
                     p.books__author Сакавич Н.
@@ -66,8 +71,8 @@
                 img.books__img(
                     src=`${pathContentImg}book-just-masa.jpg`
                     alt='Фото книги - "Просто Маса"'
-                    width="221"
-                    height="221"
+                    width=`${imgWidth}`
+                    height=`${imgWidth}`
                 )
                 .books__box
                     p.books__author Акунин Б.
@@ -92,8 +97,8 @@
                 img.books__img(
                     src=`${pathContentImg}book-green-light.jpg`
                     alt='Фото книги - "Зеленый свет"'
-                    width="221"
-                    height="221"
+                    width=`${imgWidth}`
+                    height=`${imgWidth}`
                 )
                 .books__box
                     p.books__author Макконахи М.
@@ -118,8 +123,8 @@
                 img.books__img(
                     src=`${pathContentImg}book-sun-midnight.jpg`
                     alt='Фото книги - "Солнце полуночи"'
-                    width="221"
-                    height="221"
+                    width=`${imgWidth}`
+                    height=`${imgWidth}`
                 )
                 .books__box
                     p.books__author Майер С.
@@ -144,8 +149,8 @@
                 img.books__img(
                     src=`${pathContentImg}book-second-life.jpg`
                     alt='Фото книги - "Вторая жизнь Уве"'
-                    width="221"
-                    height="221"
+                    width=`${imgWidth}`
+                    height=`${imgWidth}`
                 )
                 .books__box
                     p.books__author Бакман Ф.
@@ -170,8 +175,8 @@
                 img.books__img(
                     src=`${pathContentImg}book-istrebitel.jpg`
                     alt='Фото книги - "Истребитель"'
-                    width="221"
-                    height="221"
+                    width=`${imgWidth}`
+                    height=`${imgWidth}`
                 )
                 .books__box
                     p.books__author Быков Д.
@@ -196,8 +201,8 @@
                 img.books__img(
                     src=`${pathContentImg}book-lavr.jpg`
                     alt='Фото книги - "Лавр"'
-                    width="221"
-                    height="221"
+                    width=`${imgWidth}`
+                    height=`${imgWidth}`
                 )
                 .books__box
                     p.books__author Водолазкин Е.
