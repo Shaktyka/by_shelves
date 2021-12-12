@@ -264,7 +264,7 @@
             <h2 class="best-books__title section__title">Лучшее</h2>
             <ul class="books">
               <li class="books__item">
-                <div class="books__inner"><img class="books__img" src="static/images/content/books-anxious-people.jpg" alt="Фото книги - &quot;Тревожные люди&quot;" width="275" height="320">
+                <div class="books__inner"><img class="books__img" src="static/images/content/books-anxious-people.jpg" alt="Фото книги - #{book.name}" width="275" height="320">
                   <div class="books__box">
                     <p class="books__author">Бакман Ф.</p>
                     <h3 class="books__name">Тревожные люди</h3>
@@ -283,7 +283,7 @@
                 </div>
               </li>
               <li class="books__item">
-                <div class="books__inner"><img class="books__img" src="static/images/content/book-sapiens.jpg" alt="Фото книги - &quot;Sapiens&quot;" width="275" height="320">
+                <div class="books__inner"><img class="books__img" src="static/images/content/book-sapiens.jpg" alt="Фото книги - #{book.name}" width="275" height="320">
                   <div class="books__box">
                     <p class="books__author">Харари Ю.</p>
                     <h3 class="books__name">Sapiens</h3>
@@ -302,7 +302,7 @@
                 </div>
               </li>
               <li class="books__item">
-                <div class="books__inner"><img class="books__img" src="static/images/content/book-institute.jpg" alt="Фото книги - &quot;Институт&quot;" width="275" height="320">
+                <div class="books__inner"><img class="books__img" src="static/images/content/book-institute.jpg" alt="Фото книги - #{book.name}" width="275" height="320">
                   <div class="books__box">
                     <p class="books__author">Кинг С.</p>
                     <h3 class="books__name">Институт</h3>
@@ -321,7 +321,7 @@
                 </div>
               </li>
               <li class="books__item">
-                <div class="books__inner"><img class="books__img" src="static/images/content/book-normal-peoples.jpg" alt="Фото книги - &quot;Нормальные люди&quot;" width="275" height="320">
+                <div class="books__inner"><img class="books__img" src="static/images/content/book-normal-peoples.jpg" alt="Фото книги - #{book.name}" width="275" height="320">
                   <div class="books__box">
                     <p class="books__author">Руни С.</p>
                     <h3 class="books__name">Нормальные люди</h3>
@@ -335,7 +335,7 @@
                           />
                       </svg><span class="books__star">4.7</span>
                     </p>
-                    <div class="books__wrapper"><a class="books__link" href="#">Подробнее</a><span class="books__pages">288 страниц </span></div>
+                    <div class="books__wrapper"><a class="books__link" href="#">Подробнее</a><span class="books__pages">288 страниц</span></div>
                   </div>
                 </div>
               </li>
@@ -351,14 +351,11 @@
                   <div class="reviews__info">
                     <div class="reviews__box-images"><img class="reviews__img" src="static/images/content/review-1.jpg" alt="Фото автора отзыва" width="80" height="80"></div>
                     <div class="reviews__box">
-                      <h3 class="reviews__name">Кирилл Агапьев</h3>
+                      <h3 class="reviews__name"></h3>
                       <p class="reviews__count">Купил 35 книг</p>
                     </div>
                   </div>
-                  <p class="reviews__review">
-                    Огромный ассортимент разных книг, которых нет в магазинах нашего города. Цены зачастую гораздо ниже магазинских, так
-                    плюс к этому ещё и постоянные большие скидки!
-                  </p>
+                  <p class="reviews__review">Огромный ассортимент разных книг, которых нет в магазинах нашего города. Цены зачастую гораздо ниже магазинских, так плюс к этому ещё и постоянные большие скидки!</p>
                 </div>
               </li>
               <li class="reviews__item">
@@ -366,14 +363,11 @@
                   <div class="reviews__info">
                     <div class="reviews__box-images"><img class="reviews__img" src="static/images/content/review-2.jpg" alt="Фото автора отзыва" width="80" height="80"></div>
                     <div class="reviews__box">
-                      <h3 class="reviews__name">Елизавета Марьина</h3>
-                      <p class="reviews__count">Купила 76 книг</p>
+                      <h3 class="reviews__name"></h3>
+                      <p class="reviews__count">Купил 76 книг</p>
                     </div>
                   </div>
-                  <p class="reviews__review">
-                    Удобная навигация, большой выбор, книги в подарок при определенной сумме заказа. Заказ собирают без ошибок, привозят
-                    без задержек
-                  </p>
+                  <p class="reviews__review">Удобная навигация, большой выбор, книги в подарок при определенной сумме заказа. Заказ собирают без ошибок, привозят без задержек</p>
                 </div>
               </li>
               <li class="reviews__item">
@@ -381,14 +375,11 @@
                   <div class="reviews__info">
                     <div class="reviews__box-images"><img class="reviews__img" src="static/images/content/review-3.jpg" alt="Фото автора отзыва" width="80" height="80"></div>
                     <div class="reviews__box">
-                      <h3 class="reviews__name">Полина Аленичева</h3>
-                      <p class="reviews__count">Купила 35 книг</p>
+                      <h3 class="reviews__name"></h3>
+                      <p class="reviews__count">Купил 48 книг</p>
                     </div>
                   </div>
-                  <p class="reviews__review">
-                    Удобный каталог, полезные отзывы на книги, так же есть видеообзоры на книги. Иногда можно приобрести дорогое издание
-                    за «символическую» цену.
-                  </p>
+                  <p class="reviews__review">Удобный каталог, полезные отзывы на книги, так же есть видеообзоры на книги. Иногда можно приобрести дорогое издание за «символическую» цену.</p>
                 </div>
               </li>
             </ul>
